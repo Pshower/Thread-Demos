@@ -1,10 +1,10 @@
 .PHONY: run clean
 
 
-ALL = main.c
+ALL = main
 
 run:
-	@gcc $(ALL).c -o $(ALL).o
+	@gcc $(ALL).c -o $(ALL).o -lpthread
 	@./$(ALL).o
 	@make clean
 
