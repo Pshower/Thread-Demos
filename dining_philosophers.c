@@ -116,7 +116,7 @@ int main(){
         pthread_create(&philosophers[i], NULL, eat_many_times, (void *) no);
     }
 
-    for(int i = 0; i < N; ++i){
+    for(int i = 0; i < 5; ++i){
         pthread_join(philosophers[i], NULL);
     }
 
